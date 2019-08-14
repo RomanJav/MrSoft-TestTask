@@ -32,4 +32,5 @@ dependencies {
 
     api project(path: ':data')
     implementation rootProject.recyclerview
+    implementation 'androidx.cardview:cardview:1.0.0'
 }
