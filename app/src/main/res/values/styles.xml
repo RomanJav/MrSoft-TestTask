@@ -7,5 +7,49 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="SortButtonStyle">
+        <item name="android:text">@string/sort</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="RadioButtonStyle">
+        <item name="android:background">@color/textBackgroundDark</item>
+        <item name="android:textColor">@color/colorRadioButtonText</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="UserLevelCardStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/levelBackground</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/textCard</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="UserNameCardStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/nameBackground</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/textCard</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="UserLabelStyle">
+        <item name="android:text">@string/rateLabel</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="UserInfoStyle">
+        <item name="android:textColor">@color/textBackgroundDark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
 </resources>

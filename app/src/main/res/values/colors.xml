@@ -3,4 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="textBackgroundDark">#7201443D</color>
+    <color name="colorRadioButtonText">#15E07C</color>
+
+    <color name="levelBackground">#4CAF50</color>
+    <color name="nameBackground">#7201443D</color>
+    <color name="textCard">#FFFFFF</color>
 </resources>

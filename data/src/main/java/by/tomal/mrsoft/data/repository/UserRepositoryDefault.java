@@ -31,7 +31,7 @@ public class UserRepositoryDefault implements UserRepository {
     public Single<List<User>> fetch() {
         return userDao.getUsers().flatMap(response -> {
             if (!response.isEmpty()) {
-                return Single.just(response);
+                return userService.requestData().map(users -> users);
             } else {
                 return userService.requestData().map(users -> users);
             }

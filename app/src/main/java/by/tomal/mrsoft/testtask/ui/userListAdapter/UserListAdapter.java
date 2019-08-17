@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import by.tomal.mrsoft.testtask.R;
@@ -36,6 +37,16 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListViewHolder> {
 
     public void setNewUsers(List<User> users){
         userList = users;
+        notifyDataSetChanged();
+    }
+
+    public void sortUsersByLevel(){
+        Collections.sort(userList, (user1, user2) -> Integer.valueOf(user1.getLevel()).compareTo(Integer.valueOf(user2.getLevel())));
+        notifyDataSetChanged();
+    }
+
+    public void sortUsersByName(){
+        Collections.sort(userList, (user1, user2) -> user1.getName().compareToIgnoreCase(user2.getName()));
         notifyDataSetChanged();
     }
 }
