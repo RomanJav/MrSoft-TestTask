@@ -26,11 +26,11 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation rootProject.appcompat
     implementation rootProject.constraintLayout
-
-    api project(path: ':data')
-    implementation rootProject.recyclerview
-    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation rootProject.recyclerView
+    implementation rootProject.cardView
+    implementation rootProject.rxjava
+    implementation rootProject.rxandroid
+    implementation project(path: ':data')
 }
