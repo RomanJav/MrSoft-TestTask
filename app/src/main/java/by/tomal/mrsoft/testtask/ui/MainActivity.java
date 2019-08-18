@@ -23,6 +23,9 @@ import by.tomal.mrsoft.testtask.presenter.LoadUserList;
 import by.tomal.mrsoft.testtask.presenter.SortUserList;
 import by.tomal.mrsoft.testtask.ui.userListAdapter.UserListAdapter;
 
+import static by.tomal.mrsoft.testtask.presenter.appInstance.StaticResources.SORT_BY_LEVEL;
+import static by.tomal.mrsoft.testtask.presenter.appInstance.StaticResources.SORT_BY_NAME;
+
 public class MainActivity extends AppCompatActivity {
 
     private UserListAdapter userListAdapter = new UserListAdapter();
@@ -67,9 +70,9 @@ public class MainActivity extends AppCompatActivity {
     private void sortUsers() {
         SortUserList users = new SortUserList(userListAdapter);
         if (checkSortByName.isChecked())
-            users.sortByName();
+            users.sort(SORT_BY_NAME);
         else if (checkSortByLevel.isChecked())
-            users.sortByLevel();
+            users.sort(SORT_BY_LEVEL);
     }
 
     @Override

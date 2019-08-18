@@ -35,10 +35,9 @@
         android:id="@+id/sort_radio_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="340dp"
+        
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/user_list"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/sort_list_button"
         app:layout_constraintTop_toBottomOf="@+id/search_view">
 

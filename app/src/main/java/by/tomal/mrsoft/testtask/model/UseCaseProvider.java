@@ -16,7 +16,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
 public class UseCaseProvider {
-
+    //Получение пользователей из бд по умолчанию
     @RequiresApi(api = Build.VERSION_CODES.N)
     public static Single<List<User>> getUsers() {
         return new UserRepositoryDefault("", new UserService(
