@@ -1,6 +1,6 @@
 #### MrSoft-TestTask
 
-![alt text](https://sun9-1.userapi.com/c855216/v855216864/cb56f/exfJwF7BrrU.jpg "Главное меню") ![alt text](https://pp.userapi.com/c855328/v855328864/c8d05/XZ0BRh8a57o.jpg "Поиск 1") ![alt text](https://sun9-28.userapi.com/c850620/v850620864/19597b/No5nf70z3Dc.jpg "Поиск 2")
+![alt text](https://sun9-7.userapi.com/c855336/v855336864/c785b/lqnzZoT4KMA.jpg "Главное меню") ![alt text](https://pp.userapi.com/c855336/v855336864/c7862/kVHMLUXBwFA.jpg "Поиск 1") ![alt text](https://sun9-35.userapi.com/c855336/v855336864/c7869/_6fwqSqOeoA.jpg "Поиск 2")
 
 
 ## Что умеет делать
