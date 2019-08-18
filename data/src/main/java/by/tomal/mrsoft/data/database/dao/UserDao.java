@@ -10,6 +10,7 @@ import java.util.List;
 import by.tomal.mrsoft.data.entity.UserListResponse;
 import io.reactivex.Single;
 
+//Интерфейс Дао для бд
 @Dao
 public interface UserDao {
 

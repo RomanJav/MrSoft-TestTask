@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey;
 
 import com.google.gson.annotations.SerializedName;
 
+//Entity для сериализации данных с запроса
 @Entity(tableName = "users")
 public class UserListResponse {
 

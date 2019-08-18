@@ -22,9 +22,8 @@ public class UserService {
         api = NetworkService.getInstance().getApi();
     }
 
-    public Single<List<UserListResponse>> requestData(){
+    public Single<List<UserListResponse>> requestData() {
         Single<List<UserListResponse>> userResponse = api.getUsers();
-
         disposable = userResponse.subscribe(response -> userDao.insert(response));
         return userResponse;
     }

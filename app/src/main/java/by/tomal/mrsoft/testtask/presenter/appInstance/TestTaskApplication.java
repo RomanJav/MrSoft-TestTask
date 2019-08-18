@@ -2,6 +2,7 @@ package by.tomal.mrsoft.testtask.presenter.appInstance;
 
 import android.app.Application;
 
+//Синглтон для приложения
 public class TestTaskApplication extends Application {
 
     private static TestTaskApplication instance;

@@ -44,12 +44,11 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListViewHolder> im
         userListPreFiltered = users;
         notifyDataSetChanged();
     }
-
+    //3 метода для сортировки(Сортировка по рейтингу по клику на CardView)
     public void sortUsersByLevel(){
         Collections.sort(userList, (user1, user2) -> Integer.valueOf(user1.getLevel()).compareTo(Integer.valueOf(user2.getLevel())));
         notifyDataSetChanged();
     }
-
     public void sortUsersByName(){
         Collections.sort(userList, (user1, user2) -> user1.getName().compareToIgnoreCase(user2.getName()));
         notifyDataSetChanged();
@@ -58,7 +57,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListViewHolder> im
         Collections.sort(userList, (user1, user2) -> Integer.valueOf(user1.getRate()).compareTo(Integer.valueOf(user2.getRate())));
         notifyDataSetChanged();
     }
-
+    //Фильтр из интерфейса Filtered для поиска
     @Override
     public Filter getFilter() {
         return new Filter(){

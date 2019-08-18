@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         loadUsers();
         sortUsersByButton.setOnClickListener(view -> sortUsers());
     }
-
+    //Загрузка компонентов активити
     private void initLayout() {
         userList = findViewById(R.id.user_list);
         sortUsersByButton = findViewById(R.id.sort_list_button);
@@ -53,20 +53,20 @@ public class MainActivity extends AppCompatActivity {
         checkSortByName = findViewById(R.id.sort_by_name);
         checkSortByLevel = findViewById(R.id.sort_by_level);
     }
-
+    //Инициализация адаптера и тулбара
     private void initUserList() {
         userList.setHasFixedSize(true);
         userList.setLayoutManager(new LinearLayoutManager(this));
         userList.setAdapter(userListAdapter);
         setSupportActionBar(toolbar);
     }
-
+    //Загрузка пользователей
     @RequiresApi(api = Build.VERSION_CODES.N)
     private void loadUsers() {
         LoadUserList users = new LoadUserList(userListAdapter);
         users.load();
     }
-
+    //Сортировка пользователей
     private void sortUsers() {
         SortUserList users = new SortUserList(userListAdapter);
         if (checkSortByName.isChecked())
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         else if (checkSortByLevel.isChecked())
             users.sort(SORT_BY_LEVEL);
     }
-
+    //Инициализация меню с кнопокй поиска
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

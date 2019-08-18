@@ -15,6 +15,7 @@ import by.tomal.mrsoft.data.entity.UserListResponse;
 import by.tomal.mrsoft.data.rest.UserService;
 import io.reactivex.Single;
 
+//Получение списка пользователей по умолчанию
 public class UserRepositoryDefault implements UserRepository {
     private String url;
     private UserService userService;
@@ -31,7 +32,7 @@ public class UserRepositoryDefault implements UserRepository {
     public Single<List<User>> fetch() {
         return userDao.getUsers().flatMap(response -> {
             if (!response.isEmpty()) {
-                return userService.requestData().map(users -> users);
+                return Single.just(response);
             } else {
                 return userService.requestData().map(users -> users);
             }

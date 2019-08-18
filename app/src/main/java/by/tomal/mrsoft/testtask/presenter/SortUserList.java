@@ -11,7 +11,7 @@ public class SortUserList implements Sort {
     public SortUserList(UserListAdapter userList) {
         userListAdapter = userList;
     }
-
+    //Сортировка в зависимости от выбора
     @Override
     public void sort(String sortBy) {
         if (sortBy.equals(SORT_BY_LEVEL))
